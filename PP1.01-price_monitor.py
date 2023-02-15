@@ -30,7 +30,7 @@ def MeAvisar():
 
     emailMsg = f'confira: {URL}'
     mimeMessage = MIMEMultipart()
-    mimeMessage['to'] = 'hadassa.m.lima@gmail.com'
+    mimeMessage['to'] = 'hadassa.codes@gmail.com'
     mimeMessage['subject'] = f'o preço de {title} baixou!'
     mimeMessage.attach(emailMsg)
     # mimeMessage.attach(MIMEText(emailMsg, 'plain'))
