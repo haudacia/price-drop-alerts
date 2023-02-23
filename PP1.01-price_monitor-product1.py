@@ -1,5 +1,5 @@
 print('oi')
-from Google import Create_Service
+import google
 import base64
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
@@ -7,7 +7,7 @@ from email.mime.text import MIMEText
 from bs4 import BeautifulSoup
 import requests
 
-URL = "https://www.lojatres.com.br/short-acetinado-noa-marrom-12723079/p"
+URL = "https://www.lojatres.com.br/0012005_cinza-calca-veludo/p"
 headers = {"User-Agent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
 site = requests.get(URL, headers=headers)
 
@@ -45,7 +45,7 @@ def MeAvisar():
 import schedule
 import time
 
-if num_price < 100:
+if num_price < 270:
     schedule.every().day.at('10:00').do(MeAvisar)
 
 while True:
