@@ -28,7 +28,7 @@ def MeAvisar():
 
     service = Create_Service(client_secret_file, api_name, api_version, scopes)
 
-    emailMsg = f'confira: {URL}'
+    emailMsg = f'Confira: {URL}'
     mimeMessage = MIMEMultipart()
     mimeMessage['to'] = 'hadassa.codes@gmail.com'
     mimeMessage['subject'] = f'o preço de {title} baixou!'
